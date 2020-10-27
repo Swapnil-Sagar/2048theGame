@@ -343,16 +343,20 @@ function App() {
         }}
       >
         <div style={{ display: "flex" }}>
-          <div
-            style={{
-              fontFamily: "sans-serif",
-              flex: 1,
-              fontWeight: "700",
-              fontSize: 60,
-              color: "#776e65",
-            }}
-          >
-            2048
+          <div>
+            <a
+              href="https://github.com/Swapnil-Sagar/2048theGame"
+              style={{
+                fontFamily: "sans-serif",
+                flex: 1,
+                fontWeight: "700",
+                fontSize: 60,
+                color: "#8aede7",
+                textDecoration: "none",
+              }}
+            >
+              2048
+            </a>
           </div>
           <div
             style={{
@@ -367,7 +371,7 @@ function App() {
         </div>
         <div
           style={{
-            background: "#AD9D8F",
+            background: "#273a56",
             width: "max-content",
             height: "max-content",
             margin: "auto",
@@ -385,7 +389,7 @@ function App() {
                     fontSize: 30,
                     fontFamily: "sans-serif",
                     fontWeight: "900",
-                    color: "#776E65",
+                    color: "#f4dff7",
                   }}
                 >
                   Game Over
@@ -433,8 +437,15 @@ function App() {
             the same number touch, they <strong>merge into one!</strong>
           </p>
         </div>
-        <strong>Let's see how far you can go</strong>
-        <i>- Swapnil Sagar</i>
+        <strong style={{ textDecoration: "none", color: "#c9d1d4" }}>
+          Let's see how far you can go -
+        </strong>
+        <a
+          href="https://swapnilsagar.netlify.app/"
+          style={{ textDecoration: "none", color: "#8aede7" }}
+        >
+          <i> Swapnil Sagar</i>
+        </a>
       </div>
     </div>
   );
@@ -448,7 +459,7 @@ const Block = ({ num }) => {
       style={{
         ...blockStyle,
         background: getColors(num),
-        color: num === 2 || num === 4 ? "#645B52" : "#F7F4EF",
+        color: num === 2 || num === 4 ? "#120b76" : "#F7F4EF",
       }}
     >
       {num !== 0 ? num : ""}
@@ -471,8 +482,8 @@ const style = {
   },
   newGameButton: {
     padding: 10,
-    background: "#846F5B",
-    color: "#F8F5F0",
+    background: "#ECBB02",
+    color: "#322f40",
     width: 95,
     borderRadius: 7,
     fontWeight: "900",
@@ -482,8 +493,8 @@ const style = {
   },
   tryAgainButton: {
     padding: 10,
-    background: "#846F5B",
-    color: "#F8F5F0",
+    background: "#667393",
+    color: "#C4C8D3",
     width: 80,
     borderRadius: 7,
     fontWeight: "900",
@@ -498,7 +509,7 @@ const style = {
     left: 0,
     top: 0,
     borderRadius: 5,
-    background: "rgba(238,228,218,.5)",
+    background: "rgba(48,52,64,.9)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
