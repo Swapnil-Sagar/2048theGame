@@ -3,6 +3,7 @@ import cloneDeep from "lodash.clonedeep";
 import { useEvent, getColors } from "./util";
 import Swipe from "react-easy-swipe";
 
+// Implementation of game
 function App() {
   const UP_ARROW = 38;
   const DOWN_ARROW = 40;
@@ -60,7 +61,7 @@ function App() {
       }
     }
   };
-  // Swipe Left
+  // Swipe Left functionality
   const swipeLeft = (dummy) => {
     console.log("swipe left");
     let oldGrid = data;
@@ -107,6 +108,8 @@ function App() {
     }
   };
 
+  
+//   swipe right functionality
   const swipeRight = (dummy) => {
     console.log("swipe right");
     let oldData = data;
@@ -153,6 +156,7 @@ function App() {
     }
   };
 
+//   swipe down functionality
   const swipeDown = (dummy) => {
     console.log("swipe down");
     console.log(data);
@@ -198,6 +202,7 @@ function App() {
     }
   };
 
+//   swipe up functionality
   const swipeUp = (dummy) => {
     console.log("swipe up");
     let b = cloneDeep(data);
