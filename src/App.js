@@ -3,7 +3,7 @@ import cloneDeep from "lodash.clonedeep";
 import { useEvent, getColors } from "./util";
 import Swipe from "react-easy-swipe";
 
-// Implementation of game
+// Implementation of the game
 function App() {
   const UP_ARROW = 38;
   const DOWN_ARROW = 40;
